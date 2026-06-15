@@ -351,7 +351,7 @@ export default function AssessmentPage() {
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-4 text-white tracking-tighter">
             Knowledge Check
           </h1>
-          <p className="text-slate-350 text-sm sm:text-base md:text-lg max-w-xl mx-auto leading-relaxed">
+          <p className="text-white text-sm sm:text-base md:text-lg max-w-xl mx-auto leading-relaxed">
             Take an adaptive multiple-choice assessment. Questions scale in difficulty based on your correctness patterns.
           </p>
         </motion.div>

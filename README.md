@@ -14,6 +14,8 @@ The platform combines structured learning, real-world scenarios, and intelligent
 - Better responsiveness across all devices
 - Enhanced user experience and consistency across components
 
+<img width="1206" height="441" alt="Screenshot 2026-06-16 at 4 05 07 pm" src="https://github.com/user-attachments/assets/8a4ff6d0-f78a-44b8-aa17-b334aec7921f" />
+
 ---
 
 ### 2. 🧠 Adaptive Assessment System
@@ -36,6 +38,9 @@ A built-in assistant that supports learning across the platform:
 - Explains complex requirements engineering concepts
 - Provides learning resources
 - Offers instant guidance across labs
+
+<img width="1207" height="442" alt="Screenshot 2026-06-16 at 4 05 37 pm" src="https://github.com/user-attachments/assets/5c04594e-51bb-46cc-881f-e7e3c6f5ca6f" />
+
 
 ---
 

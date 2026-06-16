@@ -13,30 +13,30 @@ const LandingPageA: React.FC = () => {
 
       {/* Background animated gradient blobs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <motion.div 
-          animate={{ 
+        <motion.div
+          animate={{
             x: [0, 40, -20, 0],
             y: [0, -60, 40, 0],
             scale: [1, 1.15, 0.9, 1],
-            opacity: [0.25, 0.35, 0.2, 0.25] 
+            opacity: [0.25, 0.35, 0.2, 0.25]
           }}
           transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
           className="absolute -top-[10%] -left-[10%] w-[60%] h-[60%] rounded-full bg-navy-700 blur-[140px]"
         />
-        <motion.div 
-          animate={{ 
+        <motion.div
+          animate={{
             x: [0, -50, 30, 0],
             y: [0, 40, -50, 0],
             scale: [1, 1.25, 0.95, 1],
-            opacity: [0.2, 0.35, 0.15, 0.2] 
+            opacity: [0.2, 0.35, 0.15, 0.2]
           }}
           transition={{ duration: 18, repeat: Infinity, ease: "easeInOut", delay: 2 }}
           className="absolute top-[30%] -right-[15%] w-[55%] h-[65%] rounded-full bg-accent-indigo/25 blur-[160px]"
         />
-        <motion.div 
-          animate={{ 
+        <motion.div
+          animate={{
             scale: [1, 1.3, 0.8, 1],
-            opacity: [0.15, 0.25, 0.1, 0.15] 
+            opacity: [0.15, 0.25, 0.1, 0.15]
           }}
           transition={{ duration: 12, repeat: Infinity, ease: "easeInOut", delay: 5 }}
           className="absolute bottom-[-10%] left-[25%] w-[40%] h-[40%] rounded-full bg-accent-sky/20 blur-[120px]"
@@ -46,7 +46,7 @@ const LandingPageA: React.FC = () => {
       {/* Main Grid Hero Layout */}
       <div className="container mx-auto px-4 md:px-8 relative z-10 w-full max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center py-12 lg:py-20">
-          
+
           {/* Left Column: Content */}
           <div className="lg:col-span-7 flex flex-col items-start text-left">
             <motion.div
@@ -60,7 +60,7 @@ const LandingPageA: React.FC = () => {
               </div>
             </motion.div>
 
-            <motion.h1 
+            <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
@@ -72,13 +72,13 @@ const LandingPageA: React.FC = () => {
               </span>
             </motion.h1>
 
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-base sm:text-lg md:text-xl text-slate-100 max-w-2xl mb-8 leading-relaxed"
             >
-              An open-source toolkit for SE education using Large Language Models. 
+              An open-source toolkit for SE education using Large Language Models.
               Master Requirements Engineering and UML design through interactive lab exercises with instant, AI-guided feedback.
             </motion.p>
 
@@ -149,9 +149,9 @@ const LandingPageA: React.FC = () => {
 
               {/* Central Graph/Flow Illustration */}
               <div className="flex-1 py-6 relative flex flex-col justify-center gap-6">
-                
+
                 {/* Floating Card 1: User Input */}
-                <motion.div 
+                <motion.div
                   animate={{ y: [0, -6, 0] }}
                   transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                   className="bg-navy-800/95 border border-white/10 rounded-xl p-4 shadow-lg w-4/5 z-10 self-start"
@@ -162,17 +162,17 @@ const LandingPageA: React.FC = () => {
 
                 {/* Connecting Line (SVG Animated Path) */}
                 <svg className="absolute inset-0 w-full h-full pointer-events-none" style={{ zIndex: 0 }}>
-                  <path 
-                    d="M 180, 110 C 180, 160 220, 140 220, 190" 
-                    fill="none" 
-                    stroke="rgba(56, 189, 248, 0.25)" 
-                    strokeWidth="2" 
+                  <path
+                    d="M 180, 110 C 180, 160 220, 140 220, 190"
+                    fill="none"
+                    stroke="rgba(56, 189, 248, 0.25)"
+                    strokeWidth="2"
                     strokeDasharray="4 4"
                   />
-                  <path 
-                    d="M 180, 110 C 180, 160 220, 140 220, 190" 
-                    fill="none" 
-                    stroke="url(#grad)" 
+                  <path
+                    d="M 180, 110 C 180, 160 220, 140 220, 190"
+                    fill="none"
+                    stroke="url(#grad)"
                     strokeWidth="2"
                     strokeDasharray="8 100"
                     strokeDashoffset="0"
@@ -189,7 +189,7 @@ const LandingPageA: React.FC = () => {
                 </svg>
 
                 {/* Floating Card 2: AI Evaluator */}
-                <motion.div 
+                <motion.div
                   animate={{ y: [0, 6, 0] }}
                   transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 2 }}
                   className="bg-navy-900 border border-accent-indigo/30 rounded-xl p-4 shadow-lg w-4/5 self-end z-10"
@@ -206,7 +206,7 @@ const LandingPageA: React.FC = () => {
 
               {/* Footer Panel */}
               <div className="pt-4 border-t border-white/5 flex items-center justify-between">
-                <span className="text-2xs font-mono text-slate-300">LLM MODEL: GEMINI-2.5-PRO</span>
+                <span className="text-2xs font-mono text-slate-300">AI CHATBOT: INTEGRATED</span>
                 <span className="text-2xs font-mono text-slate-300">UML CONTEXT: ENABLED</span>
               </div>
             </div>
